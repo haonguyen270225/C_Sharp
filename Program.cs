@@ -18,7 +18,8 @@ for (i = 0; i < n; i++)
 
 // Kiem tra day so co phai la day tang dan hay khong;
 int check = 1;
-for( i = 0; i < n - 1 ; i++)
+for( i = 0; i < n - 1 ; i++) 
+            // chu y : xet toi n-1 thay vi n de tranh truy cap phan tu ngoai mang ( gia tri rac ) !
 {
     if (arr[i] > arr[i + 1])
     {
