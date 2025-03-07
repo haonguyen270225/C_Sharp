@@ -1,40 +1,33 @@
-﻿using System.Collections.Generic;
-using System;
-using System.Runtime.CompilerServices;
-using System.Net;
-using System.Collections;
+﻿
 /*
- Phương thức TrimExcess() trong List được sử dụng để tối ưu hóa bộ nhớ bằng cách cắt giảm
-dung lượng cấp phát dư thừa;
+ bool myList.TrueForAll(Predicate<T> match)
+=> Predicate<T> (hàm điều kiện) để kiểm tra từng phần tử trong danh sách
+Trả về:
+true : Nếu tất cả các phần tử trong danh sách thảo mãn điều kiện
+flase:Nếu ít nhất môt phần tử khồng thỏa mãn điều kiện.
  */
-class program
+class Program
 {
-    static Random rand = new Random();
-    static List<int> list = new List<int>(100); // => Trong List có 100 phân tử;
-    static void  Main()
+    static void Main()
     {
-        for( int i = 0; i < 10; i++)
+         Random random = new Random();
+         List<int> list = new List<int>(20);
+        for (int i = 0; i < 20; i++)
         {
-            list.Add(rand.Next() % 100 + 1);
+            list.Add(random.Next() % 100 + 1 );
         }
-        var n = from s in list
-                select s;
-        foreach(var item in n)
+
+        Console.WriteLine("Danh sach cac phan tu trong List la : ");
+        foreach(int i in list)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(i);
         }
-        Console.WriteLine("------------------------------");
-        //Trước TrimExcess();
-        Console.WriteLine($"Count: {list.Count}, Capacity: {list.Capacity}");
-        list.TrimExcess();
-        Console.WriteLine($"Count: {list.Count}, Capacity: {list.Capacity}");
+        // Kiểm tra tất cả số trong danh sách có phải là số chẵn không ?
+        bool check1 = list.TrueForAll(x => x % 2 == 0);
+        Console.WriteLine("Tat cac cac so trong danh sach co phai la so chan khong? {0}" , check1);
+
+        //Kiểm tra tất cả sô trong danh sách có phải nho hơn 100 không ?
+        bool check2 = list.TrueForAll(x => x < 100);
+        Console.WriteLine("Tat cac cac so trong danh sach co phai nho  hon 100 khong? {0}", check2);
     }
 }
-
-/*
-1. TrimExcess() chỉ hoạt động khi có dư thừa bộ nhớ đáng kể
-=> Nêu Capacity chỉ lớn hơn Count một chút , nó sẽ không làm gì để tránh tôn tài nguyên
-2.Không nên gọi thường xuyên
-=>Việt gọi TrimExcess() liên tục (đặc biệt khii thêm / xóa phần tử thường xuyên) có thể gây giảm
-hiệu suất , vì mỗi khi dánh sách cần mở rộng , nó phải cấp phát bộ nhớ. 
- */
