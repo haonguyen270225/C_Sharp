@@ -6,7 +6,6 @@
 /// abstract là từ khóa dùng để khai báo một lớp trừu tượng và một phương thức thuần ảo.
 /// </summary>
 
-
 // => Khi sử dụng từ khóa override để ghi đề lên phương thức lớp cha có chứa từ khóa virtual .
 // => Việt định nghĩa phương thức của lớp cha là không cần thiết .
 // => abstract nhấn mạnh 2  điều:
@@ -38,6 +37,7 @@ class Dog : Animal
         Console.WriteLine("Dog is speaking..........");
     }
 }
+// => Tất cả class kế thừa từ lớp trừu tượng đều phải định nghĩa (override) lại phương thức lớp cơ sở
 class Program
 {
     static void Main()
