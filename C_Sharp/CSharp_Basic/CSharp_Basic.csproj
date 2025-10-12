@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Bien_Variablees.Program</StartupObject>
+    <StartupObject>CSharp_Basic.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

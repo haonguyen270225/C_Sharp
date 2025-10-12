@@ -1,8 +1,8 @@
-﻿namespace Bien_Variablees
+﻿namespace Variable
 {
-    internal class Program
+    public class KhaiBao_Bien
     {
-        static void Main(string[] args)
+        public void KhaiBaoBien()
         {
             // Các biến trong C# : int , char , float , string
             
