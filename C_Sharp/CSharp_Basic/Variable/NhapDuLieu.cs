@@ -14,7 +14,7 @@
             s = Console.ReadLine();
             Console.WriteLine("Ten cua ban vua nhap la :" + s);
             Console.WriteLine("Nhap tuoi cua ban : ");
-            i = int.Parse(Console.ReadLine());
+            i = int.Parse(Console.ReadLine()); 
             Console.WriteLine("Tuoi cua ban la : " + i);
 
             Console.WriteLine("Nhap ki tu tu ban phim : ");
