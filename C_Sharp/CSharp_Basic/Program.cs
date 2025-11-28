@@ -9,19 +9,14 @@ namespace CSharp_Basic
         {
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.UTF8;
-            //NhapDuLieu a = new NhapDuLieu();
-            //a.DemoNhapDuLieu();
-            //KhaiBao_Bien b = new KhaiBao_Bien();
-            //b.KhaiBaoBien();
-            //SinhVien sv = new SinhVien();
-            //sv.SetSinhVien();
-            //sv.GetSinhVien();
 
+            //DanhSachSinhVien listSinhVien = new DanhSachSinhVien(3);
+            ////listSinhVien = new DanhSachSinhVien(2);
+            //listSinhVien.SetDanhSachSinhVien();
+            //listSinhVien.GetDanhSachSinhVien();
 
-            DanhSachSinhVien listSinhVien = null;
-            listSinhVien = new DanhSachSinhVien(2);
-            listSinhVien.SetDanhSachSinhVien();
-            listSinhVien.GetSinhVien();
+            Format_WriteLines.LearnWriteLine();
+            Console.ReadKey();
         }
     }
 }
