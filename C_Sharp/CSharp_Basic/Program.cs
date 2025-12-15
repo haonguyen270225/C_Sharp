@@ -1,9 +1,10 @@
-﻿using Variable;
+﻿//using Variable;
 using CSharp_Basic.OOP;
 using System.Text;
 using LearnTryCatch;
 using System;
 using CSharp_Basic.Generic_Class_And_Methods;
+using GreeksForGeeks;
 namespace CSharp_Basic
 {
     internal class Program
@@ -25,8 +26,14 @@ namespace CSharp_Basic
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.UTF8;
 
-            Method_Generic();
-            
+            // Demo IndexOf trong String :
+            DemoString.KhaiBao();
+            DemoString._IndexOf();
+            DemoString._IndexOf1();
+            DemoString._IndexOf2();
+            DemoString._IndexOf3();
+
+
         }
     }
 }
