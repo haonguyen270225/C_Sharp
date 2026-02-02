@@ -6,6 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <StartupObject>CSharp_Basic.Program</StartupObject>
+    <LangVersion>10.0</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Variable\Bien_Variables.cs" />
+    <Compile Remove="Variable\NhapDuLieu.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Variable\Bien_Variables.cs" />
+    <None Include="Variable\NhapDuLieu.cs" />
+  </ItemGroup>
 
 </Project>

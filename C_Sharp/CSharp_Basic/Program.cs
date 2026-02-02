@@ -27,13 +27,18 @@ namespace CSharp_Basic
             Console.InputEncoding = Encoding.UTF8;
 
             // Demo IndexOf trong String :
-            DemoString.KhaiBao();
-            DemoString._IndexOf();
-            DemoString._IndexOf1();
-            DemoString._IndexOf2();
-            DemoString._IndexOf3();
+            //DemoString.KhaiBao();
+            //DemoString._IndexOf();
+            //DemoString._IndexOf1();
+            //DemoString._IndexOf2();
+            //DemoString._IndexOf3();
 
 
+            // Demo StartsWith and EndsWith trong String;
+            DemoStartsWithAndEndsWith._StartsWith1();
+            DemoStartsWithAndEndsWith._ExampleStarsWith1();
+            DemoStartsWithAndEndsWith._ExampleStarsWith2();
+            DemoStartsWithAndEndsWith._StartsWith2();
         }
     }
 }

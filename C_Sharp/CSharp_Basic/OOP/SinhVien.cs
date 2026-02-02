@@ -7,113 +7,45 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CSharp_Basic.OOP
 {
+
     internal class SinhVien
     {
-        private string HoVaTen {  get; set; }
-        private string DiaChi {  get; set; }
-
-        private int NamSinh {  get; set; }
-        private string MaSinhVien {  get; set; }
-
+        #region ThuocTinh
+        private string HoVaTen;
+        private string DiaChi;
+        private int NamSinh;
+        private string MaSinhVien;
+        #endregion
+        #region PhuongThuc
+        public string MHoVaTen
+        {
+            set { this.HoVaTen = HoVaTen; }
+            get { return this.HoVaTen; }
+        }
+        public int MNamSinh
+        {
+            set { this.NamSinh = NamSinh; }
+            get { return this.NamSinh; }
+        }
+        public string MDiaChi
+        {
+            set { this.DiaChi = DiaChi; }
+            get { return this.DiaChi; }
+        }
+        public string MMaSinhVien
+        {
+            set { this.MaSinhVien = MaSinhVien; }
+            get { return this.MaSinhVien; }
+        }
         public SinhVien()
         {
-            HoVaTen = "" ;
+            HoVaTen = "";
             DiaChi = "";
             NamSinh = 0;
             MaSinhVien = "";
-        }
-        public SinhVien(string hoVaTen, string diaChi, int namSinh, string maSinhVien)
-        {
-            if(hoVaTen.Length < 5)
-            {
-                Console.WriteLine("Tên không hợp lệ !");
-            }
-            else
-            {
-                this.HoVaTen = hoVaTen;
-            }
-            if(diaChi.Length < 5)
-            {
-                Console.WriteLine("Địa chỉ không hợp lệ !");
-            }
-            else
-            {
-                this.DiaChi = diaChi;
-            }
-            if(namSinh > 2017)
-            {
-                Console.WriteLine("Năm sinh không hợp lệ !");
-            }
-            else
-            {
-                NamSinh = namSinh;
-            }
-            if(maSinhVien.Length != 5)
-            {
-                Console.WriteLine("Mã sinh viên không hơp lệ !");
-            }
-            else
-            {
-                this.MaSinhVien = maSinhVien;
-            }
-        }
-
-       ~SinhVien() { }
-
-        public void SetSinhVien(out SinhVien  sv)
-        {
-            SinhVien tmp = null;
-            Console.WriteLine("\t Thông tin sinh viên : ");
-            // Nhập họ và tên
-            Console.Write("Họ và tên sinh viên :");
-            tmp.HoVaTen = Console.ReadLine();
-            do
-            {
-                if (tmp.HoVaTen.Length < 5)
-                {
-                    Console.WriteLine("Họ và tên không hợp lệ (Họ và tên >= 5 ký tự) !");
-                    Console.Write("Họ và tên sinh viên :");
-                    tmp.HoVaTen = Console.ReadLine();
-                }
-            } while (tmp.HoVaTen.Length < 5);
-            //Nhập địa chỉ
-            Console.Write("Địa chỉ : ");
-            tmp.DiaChi = Console.ReadLine();
-            do
-            {
-                if (tmp.DiaChi.Length < 5)
-                {
-                    Console.WriteLine("Địa chỉ không hợp lệ (Địa chỉ >= 5 ký tự) !");
-                    Console.Write("Địa chỉ : ");
-                    tmp.DiaChi = Console.ReadLine();
-                }
-            } while (tmp.DiaChi.Length < 5);
-            //Nhập năm sinh
-            Console.Write("Năm sinh : ");
-            tmp.NamSinh = Int32.Parse(Console.ReadLine());
-            do
-            {
-                if (tmp.NamSinh > 2017)
-                {
-                    Console.WriteLine("Năm sinh không hợp lệ (năm sinh < 2017) !");
-                    Console.Write("Năm sinh : ");
-                    tmp.NamSinh = Int32.Parse(Console.ReadLine());
-                }
-            } while (tmp.NamSinh > 2017);
-            //Nhập mã sinh viên
-            Console.Write("Mã sinh viên : ");
-            tmp.MaSinhVien = Console.ReadLine();
-            do
-            {
-                if (tmp.MaSinhVien.Length != 5)
-                {
-                    Console.WriteLine("Mã sinh viên không hợp lệ (mã sinh viên = 5) ! ");
-                    tmp.MaSinhVien = Console.ReadLine();
-                }
-            } while (tmp.MaSinhVien.Length != 5);
-            sv = tmp;
         }
         public void SetSinhVien()
         {
@@ -121,26 +53,30 @@ namespace CSharp_Basic.OOP
             Console.WriteLine("\t Thông tin sinh viên : ");
             // Nhập họ và tên
             Console.Write("Họ và tên sinh viên :");
-            string s = Console.ReadLine();
+            string hoVaTen = Console.ReadLine().Trim();
+
             do
             {
-                if(s.Length < 5)
+                if (hoVaTen.Length < 5)
                 {
                     Console.WriteLine("Họ và tên không hợp lệ (Họ và tên >= 5 ký tự) !");
                     Console.Write("Họ và tên sinh viên :");
-                    s = Console.ReadLine();
+                    hoVaTen = Console.ReadLine().Trim();
+
                 }
-            } while (s.Length < 5);
+            } while (hoVaTen.Length < 5);
             //Nhập địa chỉ
             Console.Write("Địa chỉ : ");
-            string diaChi = Console.ReadLine();
+            string diaChi = Console.ReadLine().Trim();
+
             do
             {
                 if (diaChi.Length < 5)
                 {
                     Console.WriteLine("Địa chỉ không hợp lệ (Địa chỉ >= 5 ký tự) !");
                     Console.Write("Địa chỉ : ");
-                    diaChi = Console.ReadLine();
+                    diaChi = Console.ReadLine().Trim();
+
                 }
             } while (diaChi.Length < 5);
             //Nhập năm sinh
@@ -148,7 +84,7 @@ namespace CSharp_Basic.OOP
             int namSinh = Int32.Parse(Console.ReadLine());
             do
             {
-                if(namSinh > 2017)
+                if (namSinh > 2017)
                 {
                     Console.WriteLine("Năm sinh không hợp lệ (năm sinh < 2017) !");
                     Console.Write("Năm sinh : ");
@@ -157,17 +93,20 @@ namespace CSharp_Basic.OOP
             } while (namSinh > 2017);
             //Nhập mã sinh viên
             Console.Write("Mã sinh viên : ");
-            string maSinhVien = Console.ReadLine();
+            string maSinhVien = Console.ReadLine().Trim();
+
             do
             {
-                if(maSinhVien.Length != 5)
+                if (maSinhVien.Length != 5)
                 {
                     Console.WriteLine("Mã sinh viên không hợp lệ (mã sinh viên = 5) ! ");
-                    maSinhVien = Console.ReadLine();
+                    maSinhVien = Console.ReadLine().Trim();
+
                 }
             } while (maSinhVien.Length != 5);
 
-            this.HoVaTen = HoVaTen;
+
+            this.HoVaTen = hoVaTen;
             this.DiaChi = diaChi;
             this.NamSinh = namSinh;
             this.MaSinhVien = maSinhVien;
@@ -176,45 +115,60 @@ namespace CSharp_Basic.OOP
         public void GetSinhVien()
         {
             Console.WriteLine("\t Thông tin sinh viên !");
-            Console.WriteLine("Họ và tên : "+ this.HoVaTen);
-            Console.WriteLine("Mã sinh viên : "+ this.MaSinhVien);
+            Console.WriteLine("Họ và tên : " + this.HoVaTen);
+            Console.WriteLine("Mã sinh viên : " + this.MaSinhVien);
             Console.WriteLine("Năm sinh :" + this.NamSinh.ToString());
             Console.WriteLine("Đia chỉ :" + this.DiaChi);
         }
+        #endregion
     }
 
-    class DanhSachSinhVien : SinhVien
+
+    class DanhSachSinhVien
     {
-        private List<SinhVien> listSinhVien;
+        #region ThuocTinh
+        public List<SinhVien> listSinhVien;
         private int soLuong;
+        #endregion
+
+        #region PhuongThuc
+        public int MSoLuong
+        {
+            set { this.soLuong = soLuong; }
+            get { return this.soLuong; }
+        }
+
         public DanhSachSinhVien()
         {
             this.listSinhVien = new List<SinhVien>();
             this.soLuong = 0;
         }
-        public DanhSachSinhVien( int soLuong)
+        public DanhSachSinhVien(int soLuong)
         {
-            this.listSinhVien = null ;
+            this.listSinhVien = new List<SinhVien>(soLuong);
             this.soLuong = soLuong;
         }
 
         public void SetDanhSachSinhVien()
         {
-            for(int i = 0; i < this.soLuong; i++)
+            for (int i = 0; i < this.soLuong; i++)
             {
                 SinhVien tmp = new SinhVien();
-                tmp.SetSinhVien(out tmp);
+                tmp.SetSinhVien();
                 listSinhVien.Add(tmp);
             }
         }
 
         public void GetDanhSachSinhVien()
         {
-            for(int i = 0; i < listSinhVien.Count; i++)
+            string add = "STT".PadRight(5) + "MaSinhVien".PadRight(20) + "HoVaTen".PadRight(20) + "DiaChi".PadRight(20) + "NamSinh\n";
+            Console.WriteLine(add);
+            for (int i = 0; i < listSinhVien.Count; i++)
             {
-                Console.WriteLine("Sinh viên thư {0} :\n" , i+1);
-                listSinhVien[i].GetSinhVien();
+                string tmp = i.ToString().PadRight(5) + listSinhVien[i].MMaSinhVien.PadRight(20) + listSinhVien[i].MHoVaTen.PadRight(20) + listSinhVien[i].MDiaChi.PadRight(20) + listSinhVien[i].MNamSinh.ToString() + "\n";
+                Console.WriteLine(tmp);
             }
         }
+        #endregion
     }
 }

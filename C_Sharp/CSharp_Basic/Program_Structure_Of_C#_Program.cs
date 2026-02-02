@@ -1,38 +1,38 @@
 ﻿
-using System;
-Console.WriteLine("hhhhhhhhhhh!");
-namespace YourNamespace
-{
-    class YourClass
-    {
+//using System;
+//Console.WriteLine("hhhhhhhhhhh!");
+//namespace YourNamespace
+//{
+//    class YourClass
+//    {
 
-    }
+//    }
 
-    struct YourStruct
-    {
+//    struct YourStruct
+//    {
 
-    }
+//    }
 
-    delegate void YourDelegate();
+//    delegate void YourDelegate();
     
-    enum YourEnum
-    {
+//    enum YourEnum
+//    {
 
-    }
+//    }
 
-    namespace YourNestedNamespace
-    {
-        struct YourNamespace
-        {
+//    namespace YourNestedNamespace
+//    {
+//        struct YourNamespace
+//        {
 
-        }
-    }
+//        }
+//    }
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        Console.WriteLine("Hello world !");
-    //    }
-    //}
-}
+//    //class Program
+//    //{
+//    //    static void Main(string[] args)
+//    //    {
+//    //        Console.WriteLine("Hello world !");
+//    //    }
+//    //}
+//}
