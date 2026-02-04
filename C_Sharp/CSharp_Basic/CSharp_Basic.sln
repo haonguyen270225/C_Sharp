@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11426.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Basic", "CSharp_Basic.csproj", "{D13F0639-2492-4829-B5D4-2EA9E4C08EBB}"
 EndProject
@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chuong3", "..\Chuong3\Chuon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapChuong4", "..\BaiTapChuong4\BaiTapChuong4.csproj", "{D2101EF0-57E1-4287-8B4C-F13EC95F582B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUI", "..\DemoQRCode\DemoUI.csproj", "{189E28CC-449B-470A-99F4-7FA9BC1F0159}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapChuong5", "..\BaiTapChuong5\BaiTapChuong5.csproj", "{22C92284-D706-4278-B47D-049512480F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_C#", "..\OOP_C#\OOP_C#.csproj", "{5CACF113-7C45-4066-9031-516559A12A7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{D2101EF0-57E1-4287-8B4C-F13EC95F582B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2101EF0-57E1-4287-8B4C-F13EC95F582B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2101EF0-57E1-4287-8B4C-F13EC95F582B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{189E28CC-449B-470A-99F4-7FA9BC1F0159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{189E28CC-449B-470A-99F4-7FA9BC1F0159}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{189E28CC-449B-470A-99F4-7FA9BC1F0159}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{189E28CC-449B-470A-99F4-7FA9BC1F0159}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22C92284-D706-4278-B47D-049512480F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22C92284-D706-4278-B47D-049512480F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C92284-D706-4278-B47D-049512480F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C92284-D706-4278-B47D-049512480F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CACF113-7C45-4066-9031-516559A12A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CACF113-7C45-4066-9031-516559A12A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CACF113-7C45-4066-9031-516559A12A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CACF113-7C45-4066-9031-516559A12A7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
