@@ -19,4 +19,8 @@
     <None Include="Variable\NhapDuLieu.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GenericInC#\GenericInC#.csproj" />
+  </ItemGroup>
+
 </Project>

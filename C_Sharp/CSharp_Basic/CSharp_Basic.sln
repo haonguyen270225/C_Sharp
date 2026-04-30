@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapChuong5", "..\BaiTapC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_C#", "..\OOP_C#\OOP_C#.csproj", "{5CACF113-7C45-4066-9031-516559A12A7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XuLy_String", "..\XuLy_String\XuLy_String.csproj", "{794AC0E3-AFA1-4A9E-8ABA-DD5711D8E92A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericInC#", "..\GenericInC#\GenericInC#.csproj", "{B090882B-20F9-4546-9047-EBC8DDC2F07F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intance_inC#", "Intance_inC#", "{441F876B-887A-4C3C-9982-80FE9EA00137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "B1_In_Microsoft", "B1_In_Microsoft", "{C62BB675-0C7F-423F-93F5-21236219A3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B1_Learn_Inheritance", "..\B1_Learn_Inheritance\B1_Learn_Inheritance.csproj", "{7227CBE3-FD61-41A3-B369-B5EC75617B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,9 +61,25 @@ Global
 		{5CACF113-7C45-4066-9031-516559A12A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CACF113-7C45-4066-9031-516559A12A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CACF113-7C45-4066-9031-516559A12A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794AC0E3-AFA1-4A9E-8ABA-DD5711D8E92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794AC0E3-AFA1-4A9E-8ABA-DD5711D8E92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794AC0E3-AFA1-4A9E-8ABA-DD5711D8E92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794AC0E3-AFA1-4A9E-8ABA-DD5711D8E92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B090882B-20F9-4546-9047-EBC8DDC2F07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B090882B-20F9-4546-9047-EBC8DDC2F07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B090882B-20F9-4546-9047-EBC8DDC2F07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B090882B-20F9-4546-9047-EBC8DDC2F07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7227CBE3-FD61-41A3-B369-B5EC75617B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7227CBE3-FD61-41A3-B369-B5EC75617B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7227CBE3-FD61-41A3-B369-B5EC75617B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7227CBE3-FD61-41A3-B369-B5EC75617B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C62BB675-0C7F-423F-93F5-21236219A3A5} = {441F876B-887A-4C3C-9982-80FE9EA00137}
+		{7227CBE3-FD61-41A3-B369-B5EC75617B7D} = {C62BB675-0C7F-423F-93F5-21236219A3A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11262976-5D1D-4774-A819-318626EE5799}
